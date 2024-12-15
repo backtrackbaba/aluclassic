@@ -1,0 +1,494 @@
+/* Global Styles */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --accent-color: #17a2b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 76px;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Hero Section */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    bottom: 20%;
+}
+
+/* Key Highlights */
+.highlights .card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.highlights .card:hover {
+    transform: translateY(-5px);
+}
+
+.highlights .fas {
+    color: var(--primary-color);
+}
+
+/* Featured Products */
+.featured-products .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-products .card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-products .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f8f9fa;
+}
+
+.testimonial-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.client-name {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* About Page Styles */
+.about-hero {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+}
+
+.about-hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.journey .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.journey .card:hover {
+    transform: translateY(-5px);
+}
+
+.expertise .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.expertise .card:hover {
+    transform: translateY(-5px);
+}
+
+.why-choose-us .fas.fa-check-circle {
+    font-size: 1.5rem;
+}
+
+/* Products Page Styles */
+.products-hero {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.nav-pills .nav-link {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    margin: 0.25rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.product-card {
+    border: none;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.feature-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Services Page Styles */
+.services-hero {
+    padding: 6rem 0;
+}
+
+.services-hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-features li {
+    margin-bottom: 0.5rem;
+}
+
+.specialized-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.specialized-card:hover {
+    transform: translateY(-5px);
+}
+
+.specialized-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.process-step {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+/* Gallery Page Styles */
+.gallery-hero {
+    padding: 4rem 0;
+}
+
+.gallery-filter .btn {
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-info {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.gallery-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.gallery-info p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+.gallery-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    padding: 6rem 0;
+}
+
+.contact-info i {
+    width: 40px;
+    text-align: center;
+}
+
+.contact-hours {
+    background: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.form-floating > textarea.form-control {
+    height: 150px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 450px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .carousel-caption {
+        bottom: 10%;
+        padding: 1rem;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    
+    .about-hero {
+        padding: 3rem 0;
+    }
+    
+    .about-hero img {
+        margin-top: 2rem;
+    }
+    
+    .products-hero {
+        padding: 2rem 0;
+    }
+    
+    .product-card img {
+        height: 200px;
+    }
+    
+    .nav-pills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-pills .nav-link {
+        margin: 0.25rem;
+    }
+    
+    .services-hero {
+        padding: 3rem 0;
+    }
+    
+    .services-hero img {
+        margin-top: 2rem;
+    }
+    
+    .specialized-card img {
+        height: 200px;
+    }
+    
+    .gallery-hero {
+        padding: 2rem 0;
+    }
+    
+    .gallery-card img {
+        height: 200px;
+    }
+    
+    .stat-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-hero {
+        padding: 3rem 0;
+    }
+    
+    .contact-hours {
+        margin-top: 2rem;
+    }
+    
+    .form-card {
+        padding: 1.5rem;
+    }
+    
+    .map-container {
+        padding-top: 300px;
+    }
+}
